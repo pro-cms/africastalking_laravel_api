@@ -13,10 +13,10 @@
 	    "psr-4": {
 	        "zepson\\africastalking\\": "src/"
 		}
-	},
+	}
     
-    "minimum-stability": "dev"
     
+
 	
 
     

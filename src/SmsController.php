@@ -10,8 +10,7 @@ class SmsController extends Controller
     //
 
     public function done(){
-        // $username   = "novazepson";
-        // $apiKey     = "4ebf997dc7a1f06ebeba5e05b7cb7af4c745528a47c5cf8af2410557996db5ad";
+      
 
         // Initialize the SDK
         $AT         = new AfricasTalking();
