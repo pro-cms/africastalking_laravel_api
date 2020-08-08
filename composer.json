@@ -13,7 +13,15 @@
 	    "psr-4": {
 	        "zepson\\africastalking\\": "src/"
 		}
-	}
+	},
+	"extra": {
+        "laravel": {
+            "providers": [
+                "zepson\\africastalking\\AfricasTalkingServiceProvider"
+            ]
+
+        }
+    }
     
     
 
