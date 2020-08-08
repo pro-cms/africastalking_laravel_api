@@ -35,9 +35,13 @@ The package needs to be instantiated using your username and API key, which you 
 ```php
 use zepson\africastalking\AfricasTalking;
 
-$username = 'YOUR_USERNAME'; // use 'sandbox' for development in the test environment
-$apiKey   = 'YOUR_API_KEY'; // use your sandbox app API key for development in the test environment
-$AT       = new AfricasTalking($username, $apiKey);
+#UPDATE YOUR .ENV FILE WITH YOUR AFRICAS TALKING CREDENTIALS
+
+AFRICASTALKING_APP_USERNAME = "novazepson"
+AFRICASTALKING_APP_API_KEY = "4ebf997dc7a1f06ebeba5e05b7cb7af4c745528a47c5cf8af2410557996db5ad"
+AFRICASTALKING_APP_SENDER_ID= ""       // Set your shortCode or senderId
+#instantiate your servece as
+$AT       = new AfricasTalking();
 
 // Get one of the services
 $sms      = $AT->sms();
@@ -57,7 +61,7 @@ See [example](example/) for more usage examples.
 
 Instantiating the class will give you an object with available methods
 
-- `$AT = new AfricasTalking($username, $apiKey)`: Instantiate the class
+- `$AT = new AfricasTalking()`: Instantiate the class
 - Get available service
     - [SMS Service](#sms): `$sms = $AT->sms()`
     - [Content Service](#content): `$content = $AT->content()`
@@ -403,21 +407,4 @@ $xmlresponse = $voiceActions
 
 - `generateAuthToken()`: Generate an auth token to use for authenticating API requests instead of your API key.
 
-## Testing the SDK
-
-The SDK uses [PHPUnit](https://phpunit.de/manual/current/en/index.html) as the test runner.
-
-To run available tests, from the root of the project run:
-
-```bash
-# Configure needed fixtures, e.g sandbox api key, Africa's Talking products
-cp tests/Fixtures.php.tpl tests/Fixtures.php
-
-# Run tests
-phpunit
-```
-
-## Issues
-
-If you find a bug, please file an issue on [our issue tracker on GitHub](https://github.com/AfricasTalkingLtd/africastalking-php/issues).
 
