@@ -9,9 +9,15 @@
             "email": "novath@zepson.co.tz"
         }
     ],
+	"autoload": {
+	    "psr-4": {
+	        "zepson\\africastalking\\": "src/"
+		}
+	},
+    
     "minimum-stability": "dev",
     "require": {
-        "guzzlehttp/guzzle": "^6.2"
-
-    }
+           "laravel/framework": "^5.8 || ^6 || ^7",
+    },
+	
 }
