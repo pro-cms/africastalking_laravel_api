@@ -2,7 +2,7 @@
 
 [![Latest Stable Version](https://img.shields.io/badge/stable-1.0-blue.svg)](https://packagist.org/packages/africastalking/africastalking)
 
-> This SDK provides convenient access to the Africa's Talking API for applications written in Laravel and it was tested with laravel 7.
+> This Package provides convenient access to the Africa's Talking API for applications written in Laravel and it was tested with laravel 7.
 - WITH THIS PACKAGE YOU WILL GET THE FOLLOWING SERVEICES  IN YOUR LARAVEL APPLICATION
     - [SMS Service]
     - [Content Service]
@@ -37,8 +37,10 @@ use zepson\africastalking\AfricasTalking;
 
 #UPDATE YOUR .ENV FILE WITH YOUR AFRICAS TALKING CREDENTIALS
 
-AFRICASTALKING_APP_USERNAME = "novazepson"
-AFRICASTALKING_APP_API_KEY = ""
+ add-license-1
+
+AFRICASTALKING_APP_USERNAME = "YOUR AFRICA IS TALKING APP NAME"
+AFRICASTALKING_APP_API_KEY = " YOUR APP URL"
 AFRICASTALKING_APP_SENDER_ID= ""       // Set your shortCode or senderId
 #instantiate your servece as
 $AT       = new AfricasTalking();

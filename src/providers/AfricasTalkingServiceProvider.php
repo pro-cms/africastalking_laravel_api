@@ -1,15 +1,16 @@
 <?php
 
-namespace zepson\africastalking;
+namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-class SmsServiceProvider extends ServiceProvider
+
+class AfricasTalkingServiceProvider extends ServiceProvider
 {
-    /**
-     * Register services.
-     *
-     * @return void
-     */
+
+
+
+
+
     public function register()
     {
         // register our controller
@@ -25,7 +26,7 @@ class SmsServiceProvider extends ServiceProvider
     {
         include __DIR__.'/routes.php';
         $this->publishes([
-            __DIR__.'/../config/zepson_africastalking.php' => config_path('zepson_africastalking.php'),
+            __DIR__.'/../../config/zepson_africastalking.php' => config_path('zepson_africastalking.php'),
         ], 'africastalking_config');
 
         //
