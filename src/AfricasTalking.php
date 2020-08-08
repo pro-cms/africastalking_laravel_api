@@ -22,9 +22,9 @@ class AfricasTalking
 	protected $voiceUrl;
 	protected $paymentUrl;
 
-	public function __construct($username, $apiKey)
+	public function __construct()
 	{
-		if($username === 'sandbox') {
+		if( config("zepson_africastalking.username") === 'sandbox') {
 			$this->baseDomain = self::BASE_SANDBOX_DOMAIN;
 		} else {
 			$this->baseDomain = self::BASE_DOMAIN;
@@ -33,15 +33,15 @@ class AfricasTalking
 		$this->baseUrl = "https://api." . $this->baseDomain . "/version1/";
 		$this->voiceUrl = "https://voice." . $this->baseDomain . "/";
 		$this->paymentsUrl = "https://payments." . $this->baseDomain . "/";
-		$this->contentUrl = ($username === "sandbox") ? ($this->baseUrl) : ("https://content." . $this->baseDomain . "/version1/");
+		$this->contentUrl = ( config("zepson_africastalking.username") === "sandbox") ? ($this->baseUrl) : ("https://content." . $this->baseDomain . "/version1/");
 		$this->checkoutTokenUrl = "https://api." . $this->baseDomain . "/";
 
-		if ($username === 'sandbox') {
+		if ( config("zepson_africastalking.username") === 'sandbox') {
 			$this->contentUrl = $this->baseUrl;
 		}
 
-		$this->username = $username;
-		$this->apiKey = $apiKey;
+		$this->username = config("zepson_africastalking.username");
+		$this->apiKey = config("zepson_africastalking.apiKey");
 
 		$this->client = new Client([
 			'base_uri' => $this->baseUrl,

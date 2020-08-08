@@ -10,11 +10,11 @@ class SmsController extends Controller
     //
 
     public function done(){
-        $username   = "novazepson";
-        $apiKey     = "4ebf997dc7a1f06ebeba5e05b7cb7af4c745528a47c5cf8af2410557996db5ad";
+        // $username   = "novazepson";
+        // $apiKey     = "4ebf997dc7a1f06ebeba5e05b7cb7af4c745528a47c5cf8af2410557996db5ad";
 
         // Initialize the SDK
-        $AT         = new AfricasTalking($username, $apiKey);
+        $AT         = new AfricasTalking();
 
         // Get the SMS service
         $sms        = $AT->sms();
@@ -25,8 +25,6 @@ class SmsController extends Controller
         // Set your message
         $message    = "novath";
 
-        // Set your shortCode or senderId
-        $from       = "18296";
                // return "hi from sms";
                     // Thats it, hit send and we'll take care of the rest
                     try {

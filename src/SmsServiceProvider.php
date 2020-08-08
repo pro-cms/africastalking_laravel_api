@@ -24,6 +24,9 @@ class SmsServiceProvider extends ServiceProvider
     public function boot()
     {
         include __DIR__.'/routes.php';
+        $this->publishes([
+            __DIR__.'/config/zepson_africastalking.php' => config_path('zepson_africastalking.php'),
+        ], 'africastalking_config');
 
         //
     }
