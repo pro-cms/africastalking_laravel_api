@@ -1,0 +1,17 @@
+{
+    "name": "zepson/africastalking",
+    "description": "This is the package for sms integration in your laravel application using africastalking adk",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Novath Thomas",
+            "email": "novath@zepson.co.tz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+
+    }
+}
