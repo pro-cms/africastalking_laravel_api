@@ -1,9 +1,16 @@
 # Africa's Talking LARAVEL 7 API 
 
-[![Latest Stable Version](https://img.shields.io/badge/stable-2.4.0-blue.svg)](https://packagist.org/packages/africastalking/africastalking)
+[![Latest Stable Version](https://img.shields.io/badge/stable-1.0-blue.svg)](https://packagist.org/packages/africastalking/africastalking)
 
 > This SDK provides convenient access to the Africa's Talking API for applications written in Laravel and it was tested with laravel 7.
-
+- WITH THIS PACKAGE YOU WILL GET THE FOLLOWING SERVEICES  IN YOUR LARAVEL APPLICATION
+    - [SMS Service]
+    - [Content Service]
+    - [Airtime Service]
+    - [Payments Service]
+    - [Voice Service]
+    - [Token Service]
+    - [Application Service]
 ## Documentation
 Take a look at the [API docs here](http://docs.africastalking.com).
 
@@ -21,7 +28,7 @@ composer require zepson/africastalking
 
 ## Usage
 
-The SDK needs to be instantiated using your username and API key, which you can get from the [dashboard](https://account/africastalking.com).
+The package needs to be instantiated using your username and API key, which you can get from the [dashboard](https://account/africastalking.com).
 
 > You can use this SDK for either production or sandbox apps. For sandbox, the app username is **ALWAYS** `sandbox`
 
