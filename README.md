@@ -16,11 +16,11 @@ Take a look at the [API docs here](http://docs.africastalking.com).
 
 ## Install 
 
-You can install the PHP SDK via composer or by downloading the source
+You can install the package via composer or by downloading the source
 
 #### Via Composer
 
-The recommended way to install the SDK is with [Composer](http://getcomposer.org/). 
+The recommended way to install the package is with [Composer](http://getcomposer.org/). 
 
 ```bash
 composer require zepson/africastalking
