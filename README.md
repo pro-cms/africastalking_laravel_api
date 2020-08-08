@@ -37,8 +37,8 @@ use zepson\africastalking\AfricasTalking;
 
 #UPDATE YOUR .ENV FILE WITH YOUR AFRICAS TALKING CREDENTIALS
 
-AFRICASTALKING_APP_USERNAME = "novazepson"
-AFRICASTALKING_APP_API_KEY = "4ebf997dc7a1f06ebeba5e05b7cb7af4c745528a47c5cf8af2410557996db5ad"
+AFRICASTALKING_APP_USERNAME = "YOUR AFRICA IS TALKING APP NAME"
+AFRICASTALKING_APP_API_KEY = " YOUR APP URL"
 AFRICASTALKING_APP_SENDER_ID= ""       // Set your shortCode or senderId
 #instantiate your servece as
 $AT       = new AfricasTalking();
