@@ -25,7 +25,10 @@ The recommended way to install the package is with [Composer](http://getcomposer
 ```bash
 composer require zepson/africastalking
 ```
-
+## Publish Configuraion file
+```bash
+php artisan vendor:publish --tag=africastalking_config:config
+```
 ## Usage
 
 The package needs to be instantiated using your username and API key, which you can get from the [dashboard](https://account/africastalking.com).
