@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace zepson\africastalking;
 
 use Illuminate\Support\ServiceProvider;
 
